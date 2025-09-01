@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Multi-section webpage showcasing lists, tables, media, and a complete HTML5 form"
+    />
+    <title>Showcase Web Page</title>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <h1>Welcome to My Showcase Web Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#table">Table</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#form">Registration Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+      <!-- ===== LISTS SECTION ===== -->
+      <section id="lists">
+        <h2>1. Using Lists in HTML5</h2>
+
+        <article>
+          <h3>Unordered List (Favorite Fruits)</h3>
+          <ul>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Mangoes</li>
+            <li>Oranges</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Ordered List (Steps to Make Coffee)</h3>
+          <ol>
+            <li>Boil water</li>
+            <li>Add coffee powder</li>
+            <li>Pour hot water</li>
+            <li>Stir and enjoy</li>
+          </ol>
+        </article>
+
+        <article>
+          <h3>Description List (Web Technologies)</h3>
+          <dl>
+            <dt>HTML5</dt>
+            <dd>Used for structuring web content</dd>
+            <dt>CSS3</dt>
+            <dd>Used for styling and layout</dd>
+            <dt>JavaScript</dt>
+            <dd>Used for interactivity</dd>
+          </dl>
+        </article>
+      </section>
+
+      <!-- ===== TABLE SECTION ===== -->
+      <section id="table">
+        <h2>2. Example Table</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <caption>
+            Monthly Expenses
+          </caption>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Groceries</th>
+              <th>Transport</th>
+              <th>Utilities</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>January</td>
+              <td>$200</td>
+              <td>$80</td>
+              <td>$120</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>$220</td>
+              <td>$75</td>
+              <td>$110</td>
+            </tr>
+            <tr>
+              <td>March</td>
+              <td>$210</td>
+              <td>$85</td>
+              <td>$130</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <th>$630</th>
+              <th>$240</th>
+              <th>$360</th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- ===== MEDIA SECTION ===== -->
+      <section id="media">
+        <h2>3. Using Media in HTML5</h2>
+        <article>
+          <h3>Image Example</h3>
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Sample Image"
+            width="300"
+          />
+        </article>
+
+        <article>
+          <h3>Audio Example</h3>
+          <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+
+        <article>
+          <h3>Video Example</h3>
+          <video width="320" height="240" controls>
+            <source src="sample-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </article>
+      </section>
+
+      <!-- ===== HTML5 FORM SECTION ===== -->
+      <section id="form">
+        <h2>4. Registration Form</h2>
+        <form action="#" method="post">
+          <!-- Personal Details -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              required
+              minlength="2"
+              maxlength="30"
+              placeholder="Enter your first name"
+            /><br /><br />
+
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              required
+              minlength="2"
+              maxlength="30"
+              placeholder="Enter your last name"
+            /><br /><br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="e.g. user@example.com"
+            /><br /><br />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+              placeholder="Enter at least 6 characters"
+            /><br /><br />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required /><br /><br />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10}"
+              placeholder="e.g. 0663419575"
+            /><br /><br />
+          </fieldset>
+
+          <!-- Account Preferences -->
+          <fieldset>
+            <legend>Account Preferences</legend>
+
+            <label>Gender:</label><br />
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label><br /><br />
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">--Select Country--</option>
+              <option value="south-africa">South Africa</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="spain">Spain</option></select
+            ><br /><br />
+
+            <label for="avatar">Upload Profile Picture:</label>
+            <input
+              type="file"
+              id="avatar"
+              name="avatar"
+              accept="image/*"
+            /><br /><br />
+
+            <label for="range">Satisfaction Level:</label>
+            <input
+              type="range"
+              id="range"
+              name="range"
+              min="0"
+              max="10"
+              step="1"
+              value="5"
+            />
+          </fieldset>
+
+          <!-- Terms & Submission -->
+          <fieldset>
+            <legend>Confirmation</legend>
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms"
+              >I agree to the <a href="#">Terms & Conditions</a></label
+            ><br /><br />
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <p>&copy; 2025 My Showcase Web Page | Designed by Sihle</p>
+    </footer>
+  </body>
+</html>
